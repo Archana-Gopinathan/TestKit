@@ -111,10 +111,8 @@ class Search extends React.Component {
 					{ results.map( result => {
 						return (
 							<a key={ result.id } href={ result.previewURL } className="result-item">
-								<h6 className="image-username">{result.user}</h6>
-								<div className="image-wrapper">
-									<img className="image" src={ result.previewURL } alt={`${result.username} image`}/>
-								</div>
+								<h6>{result.title}</h6>
+								<h6>{result.url}</h6>
 							</a>
 						)
 					} ) }
